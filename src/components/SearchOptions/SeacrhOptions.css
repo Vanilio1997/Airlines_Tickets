@@ -1,0 +1,14 @@
+.sort_filter_container {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0,0,0,.15);
+    background-color: #fff;
+    width: 250px;
+    text-align: start;
+}
+
+.sort_filter_container h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}

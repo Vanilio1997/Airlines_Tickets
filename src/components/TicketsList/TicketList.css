@@ -1,0 +1,10 @@
+.show_more_btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 640px
+}
+.show_more_btn {
+    width: 200px;
+    height: 60px;
+}

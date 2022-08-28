@@ -1,0 +1,62 @@
+:root {
+    --blue-color: #0087c9;
+    --orange-color: #fdb067;
+    --white-color: #fff;
+}
+
+.ticket_info_container {
+  padding: 5px 10px 3px;
+  border-top: 2px solid var(--blue-color);
+  background-color: var(--white-color);
+}
+
+.ticket_way_info_container{
+    margin: 5px 16px;
+    padding-bottom: 5px;
+    border-bottom:0.5px solid #e0e0e0;
+    text-align: start;
+}
+
+.time_info_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 16px;
+}
+
+.aboba:nth-of-type(1) {
+    display: flex;
+  }
+  .aboba:nth-of-type(1) > hr {
+    margin: auto;
+    width: 100%;
+  }
+   
+.line_transfer {
+    height: 1px;
+    width: 100%;
+    background-color: #a2a2a2;
+}
+
+.transfer_container {
+    margin: 5px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line_transfer_container{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: center;
+}
+
+.transfer_number{
+    color: var(--orange-color);
+    width: 60%;
+}
+
+.selection_airline {
+    margin: 10px 16px;    
+    text-align: left;
+}
