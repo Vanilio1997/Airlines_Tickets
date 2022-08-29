@@ -1,10 +1,10 @@
 import { IAction } from '../../types/types';
-import { IStoreInterface } from './../../types/StoreTypes';
-import { getDataFlights } from "../../commons/getStartedData/getDataFlightsFromJson"
+import { IStoreInterface } from '../../types/StoreTypes';
+import { getDataFlights } from "../../common/getStartedData/getDataFlightsFromJson"
 import  dataJson from '../../data/flights.json'
-import { sortDataFunc } from '../../commons/filterSortFunctions/sortDataFunc';
-import { getDataFilterArray } from '../../commons/getStartedData/getDataFilterArray';
-import { mainSortFiltrFunc } from '../../commons/filterSortFunctions/mainSortFiltrFunc';
+import { sortDataFunc } from '../../common/filterSortFunctions/sortDataFunc';
+import { getDataFilterArray } from '../../common/getStartedData/getDataFilterArray';
+import { mainSortFiltrFunc } from '../../common/filterSortFunctions/mainSortFiltrFunc';
 
 const dataFlights = getDataFlights(dataJson)
 const dataAirlines = getDataFilterArray(dataFlights)

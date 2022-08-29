@@ -2,8 +2,10 @@ import { useDispatch } from "react-redux"
 import { IAirlinesInterface } from "../../../../types/types"
 
 const AirlineCompanyCheckbox = (airlineData :IAirlinesInterface) => {
-  const {airline, id, isChecked} = airlineData
+  const {airline, id, isChecked,minPrice} = airlineData
   const dispatch = useDispatch()
+
+
   return (
    <div> 
     <input 
@@ -11,7 +13,7 @@ const AirlineCompanyCheckbox = (airlineData :IAirlinesInterface) => {
       checked = {isChecked}
       onChange = {() => dispatch({type: 'COMPANY_FILTER' , payload: id})}
     />
-    {airline}
+  <span className="checkbox_airline_label_text"> - {airline} от {minPrice}</span> 
    </div>
   )
 }

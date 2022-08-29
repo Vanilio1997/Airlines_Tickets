@@ -17,7 +17,7 @@ const setWeekDay = (date:Date):string => {
 
 export const setTimes = (date:string):ISetTimesInterface => {
     const parsingDate = new Date(date)
-    const dateObj = {day: 0, hour: 0, minutes: 0, weekDay: '', month: ''}
+    const dateObj:ISetTimesInterface = {day: 0, hour: 0, minutes: 0, weekDay: '', month: ''}
     
     dateObj.month = setMonth(parsingDate)
     dateObj.weekDay = setWeekDay(parsingDate)

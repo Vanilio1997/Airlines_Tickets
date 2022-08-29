@@ -1,8 +1,5 @@
-import React from 'react';
 import SearchOptions from './components/SearchOptions';
 import TicketsList from './components/TicketsList';
-import aboba from './data/flights.json'
-
 import './App.css';
 
 function App() {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ILegs, ICarrier } from '../../../../types/DataType/DataType'
-import { setTimes ,parseFlyDuration } from '../../../../commons/utilits/setTimes'
+import { setTimes ,parseFlyDuration } from '../../../../common/utilits/setTimes'
 import './TicketItemLeg.css'
 
 const TicketItemLeg = (legFlightData: ILegs , currentAirline: string) => {

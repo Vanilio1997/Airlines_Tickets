@@ -12,3 +12,11 @@
     font-weight: 700;
     margin-bottom: 20px;
 }
+
+.checkbox_airline_label_text{
+    font-size: 12px;
+}
+
+.filter_price_input{
+    margin: 5px;
+}

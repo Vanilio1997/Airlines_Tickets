@@ -10,11 +10,11 @@ const FilterByPrice = () => {
   return (
     <div className='sort_filter_container'>
         <h3>Цена</h3>
-        <div>От <input 
+        <div className='filter_price_input'>От <input 
           value = {minInputValue}
           onChange = {(e) => dispatch({type:'PRICE_FILTER' , payload:{min:e.target.value, max: maxInputValue}}) }
         /></div>
-        <div>До <input
+        <div className='filter_price_input'>До <input
           value={maxInputValue}
           onChange = {(e) => dispatch({type:'PRICE_FILTER' , payload:{min:minInputValue, max: e.target.value}}) }
         /></div>

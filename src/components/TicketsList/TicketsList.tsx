@@ -12,24 +12,34 @@ const TicketsList = () => {
     for (let i = 0 ; i< numberOfTickets; i++){
         showTicketsArr.push(flightsData[i])
     }
-    console.log(numberOfTickets)
 
-    useEffect( ()=>{
+    useEffect( () => {
        
     }, [sortValue])
-
+    
     return (
+        
         <div>
-            <div>
-            {
-                showTicketsArr.map( (flightData) => (
-                     <TicketItem {...flightData} />
-                ))
+            { 
+                flightsData.length !== 0 
+                    ?
+                        <div>
+                            <div>
+                            {
+                                showTicketsArr.map( (flightData) => (
+                                    <TicketItem {...flightData} />
+                                ))
+                            }
+                            </div>
+                        
+                        
+                            <div className='show_more_btn_container'> 
+                                <button className='show_more_btn' onClick={() => setNumberOfTickets(numberOfTickets + 2) }>Показать ещё</button>
+                            </div>
+                        </div>
+                    :
+                        <div>Результатов по вашим параметрам не обнаружено</div>
             }
-            </div>
-            <div className='show_more_btn_container'> 
-                <button className='show_more_btn' onClick={() => setNumberOfTickets(numberOfTickets + 2) }>Показать ещё</button>
-            </div>
         </div>
     )
 }

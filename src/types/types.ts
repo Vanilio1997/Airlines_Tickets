@@ -14,7 +14,7 @@ export interface IAction {
 export interface ISetTimesInterface {
     day: number
     hour: number
-    minutes: number | string
+    minutes: string | number
     month: string
     weekDay: string
 }
@@ -30,8 +30,9 @@ export interface IResultFlyObject {
 
 export interface IAirlinesInterface {
     airline: string
-    id: number
-    isChecked: boolean
+    minPrice:number
+    id?: number
+    isChecked?: boolean
 }
 
 export interface IMainSortFilterFuncInterface {
