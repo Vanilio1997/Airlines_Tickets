@@ -6,14 +6,11 @@ export const getDataFilterArray = (data:IFlight[]) => {
 
     data.forEach( flight => {
         if(!filterArr.some(item => item.airline === flight.carrier.caption)){
-
-            console.log(filterArr , flight.carrier.caption)
             filterArr.push({airline:flight.carrier.caption, minPrice: +flight.price.total.amount})
         } 
         else{
             filterArr = filterArr.map(item => {
                 if(item.minPrice < +flight.price.total.amount && item.airline === flight.carrier.caption){
-
                     return {airline:flight.carrier.caption, minPrice: +flight.price.total.amount}
                 } else {
                     return item

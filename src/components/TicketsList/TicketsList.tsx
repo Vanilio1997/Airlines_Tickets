@@ -12,11 +12,14 @@ const TicketsList = () => {
     for (let i = 0 ; i< numberOfTickets; i++){
         showTicketsArr.push(flightsData[i])
     }
+    if(!showTicketsArr[1]){
+        showTicketsArr.length = 1
+    }
 
     useEffect( () => {
        
     }, [sortValue])
-    
+    debugger
     return (
         
         <div>
