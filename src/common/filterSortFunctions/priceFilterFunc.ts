@@ -4,8 +4,8 @@ export const priceFilterFunc = (data: IFlight , min:number, max:number): IFlight
     
     let fitredPrice 
     if( +data.price.total.amount >= +min && +data.price.total.amount <= +max ){
-        fitredPrice = data
-    }
+        fitredPrice = data       
+    } 
 
     return fitredPrice
 }

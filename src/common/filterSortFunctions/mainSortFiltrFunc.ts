@@ -17,7 +17,7 @@ export const mainSortFiltrFunc = ({data, transfersObj , airlineArr, minPrice, ma
         }     
     })
 
-    if( airlineCompanyId || airlineCompanyId ===0 ) {
+    if( airlineCompanyId || airlineCompanyId === 0 ) {
         airlinesArray =  airlineArr.map(airline => {  
             if(airline.id === airlineCompanyId){
                 return ({...airline , isChecked: !airline.isChecked})
